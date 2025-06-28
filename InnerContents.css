@@ -3,7 +3,7 @@ section .main-box {
     top: 52.5%;
     left: 50%;
     width: 62.5vh;
-    height: 47.5vh;
+    height: 40vh;
     transform: translate(-50%, -50%);
     background-color: #261E51;
     border-style: solid;
@@ -11,6 +11,7 @@ section .main-box {
     border-color: white;
     border-radius: 8px;
     z-index: 1;
+    text-align: center;
 }
 
 section .header-box {
@@ -29,10 +30,26 @@ section .header-box {
 
 section .header-text {
     display: flex;
-    font-weight: 15px;
     font-size: 20px;
     padding-left: 15px;
     padding-top: 4px;
     color: white;
     font-family: 'Space Mono', monospace;
+}
+
+section .name {
+    display: relative;
+    font-size: 100px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+section .profession {
+    display: relative;
+    text-align: left;
+    padding-left: 192px;
+    font-size: 20px;
+    line-height: 0.1;
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
