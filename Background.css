@@ -51,7 +51,7 @@ section .main-box {
     z-index: 1;
 }
 
-section .header {
+section .header-box {
     position: relative;
     top: 0%;
     width: 100%;
@@ -63,6 +63,15 @@ section .header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     z-index: 2;
+}
+
+section .header-text {
+    display: flex;
+    font-weight: 15px;
+    font-size: 30px;
+    padding-left: 15px;
+    color: white;
+    font-family: 'Space Mono', monospace;
 }
 
 @keyframes animate {
