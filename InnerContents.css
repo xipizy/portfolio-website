@@ -3,7 +3,7 @@ section .main-box {
     top: 52.5%;
     left: 50%;
     width: 62.5vh;
-    height: 40vh;
+    height: 32.5vh;
     transform: translate(-50%, -50%);
     background-color: #261E51;
     border-style: solid;
