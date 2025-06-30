@@ -24,31 +24,81 @@
     <!-- Inner contents -->
     <section>
         <div class = "main-box">
-            <div class = "header-box">
-                <h class = "header-text">home</h>
-            </div>
 
-            <div>
-                <h1 class = "name">Eloon Ing</h1>
-                <p class = "profession">Software Engineer</p>
-            </div>
+            <!-- home page -->
+            <div id = "home" class = "card-view active">
+                <div class = "header-box">
+                    <h class = "header-text">home</h>
+                </div>
 
-            <div class = "row-allign">
-                <button class = "buttons">
-                    <img src = "imgs/person.png" alt = "about me">
-                    <span>about me</span>
-                </button>
+                <div>
+                    <h1 class = "name">Eloon Ing</h1>
+                    <p class = "profession">Software Engineer</p>
+                </div>
+
+                <div class = "row-allign">
+                    <button class = "buttons" data-target = "about-me">
+                        <img src = "imgs/person.png" alt = "about me">
+                        <span>about me</span>
+                    </button>
                 
-                <button class = "buttons">
-                    <img src = "imgs/folder.png" alt = "projects">
-                    <span>projects</span>
-                </button>
+                    <button class = "buttons" data-target = "projects">
+                        <img src = "imgs/folder.png" alt = "projects">
+                        <span>projects</span>
+                    </button>
 
-                <button class = "buttons">
-                    <img src = "imgs/links.png" alt = "links">
-                    <span>links</span>
-                </button>
+                    <button class = "buttons" data-target = "links">
+                        <img src = "imgs/links.png" alt = "links">
+                        <span>links</span>
+                    </button>
+                </div>
             </div>
+
+            <!-- about me page -->
+            <div id = "about-me" class = "card-view">
+                <div class = "header-box-about-me">
+                    <h class = "header-text">about me</h>
+                    <button class = "return-button" data-target = "home">
+                        <img src = "imgs/back.png" alt = "img icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- projects page -->
+            <div id = "projects" class = "card-view">
+                <div class = "header-box-projects">
+                    <h class = "header-text">projects</h>
+                    <button class = "return-button" data-target = "home">
+                        <img src = "imgs/back.png" alt = "img icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- links page -->
+            <div id = "links" class = "card-view">
+                <div class = "header-box-links">
+                    <h class = "header-text">links</h>
+                    <button class = "return-button" data-target = "home">
+                        <img src = "imgs/back.png" alt = "img icon">
+                    </button>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- Java script-->
+    <script>
+        const buttons = document.querySelectorAll('.buttons, .return-button');
+        const views   = document.querySelectorAll('.card-view');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const id = btn.dataset.target;
+                    views.forEach(v => {
+                        v.classList.toggle('active', v.id === id);
+                });
+            });
+        });
+    </script>
 </body>
