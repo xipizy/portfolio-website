@@ -143,3 +143,28 @@ section .buttons {
   display: block;
   opacity: 1;
 }
+
+.links {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
