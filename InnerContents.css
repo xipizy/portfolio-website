@@ -234,3 +234,17 @@ a:hover {
   border-radius: 4px;
 }
 
+.about-name {
+    margin-top: 15px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
